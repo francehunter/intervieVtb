@@ -33,9 +33,23 @@ REST - Representational State Transfer — «передача состояния
 - перформанс на уровне кеша и шаблонизации
 - надежность как стейтлес
 
-SOAP - Simple Object Access Protocol - можно определить как антипод REST - для обмена в RPC - подразумевается состояние клиента.
+SOAP - Simple Object Access Protocol - можно определить как антипод REST - для обмена в RPC - подразумевается состояние клиента. Представление данных в виде XML вида 
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <getProductDetails xmlns="http://warehouse.example.com/ws">
+       <productID>12345</productID>
+     </getProductDetails>
+   </soap:Body>
+</soap:Envelope>
+Видим большой оверхед на разметку.
 
 8. Форматы XML и JSON
+
+XML - eXtensible Markup Language - форма представления данных в виде древовидной структуры. Состоит из элементов. Элемент - комбинация открытого и закрытого тега <elname myattr1="3" myattr2="4">elvalue</elname>. Между тегами расположено значение elvalue, в косых открывающих скобках - множество аттрибутов myattr.
+Требования:
+- наличие корневого элемента
+- клиент-серверная поддержка кодировок UTF-8/16
 
 
 9. LoadRunner: протокол web/http (способы записи, параметризация, корреляция и верификация)

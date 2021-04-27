@@ -70,7 +70,7 @@ JSON - JavaScript Object Notation - текстовая форма предста
 GROUP BY - группировка результатов выборки. Влияет на работу агрегатных функций COUNT, MIN, MAX, AVG и SUM. Без применения GROUP BY агрегатные функции будут работать по всем столбцам, указанным в SELECT, иначе - по результатам группровки. Математический аналог для SUM - спектр - SELECT age, SUM(salary) as sum FROM workers GROUP BY age - распределение зарплаты по возрастам.
 HAVING - это WHERE для результатов группировки.
 JOIN - объединение множества строк из множества таблиц. Результат слияния каждой пары таблиц можно представить в виде
-<img src="https://github.com/francehunter/intervieVtb/blob/main/interview/join.png" width="150" height="70">
+<img src="https://github.com/francehunter/intervieVtb/blob/main/interview/join.png" width="1000" height="200">
 
 
 14. Oracle: AWR, планы запросов (как получить, как анализировать и какую инфу получать оттуда)

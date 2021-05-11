@@ -201,6 +201,14 @@ bytes-consumed-rate
 records-consumed-rate
 fetch-rate
 
+Метрики хранителя зоопарка:
+outstanding_requests
+avg_latency
+num_alive_connections
+followers
+pending_syncs
+open_file_descriptor_count
+
  Обище метрики: процессор, диск, сеть, сборщик мусора java.
 
 Подробнее про метрики https://www.datadoghq.com/blog/monitoring-kafka-performance-metrics/
